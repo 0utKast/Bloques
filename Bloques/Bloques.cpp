@@ -1,4 +1,44 @@
-int sumar(int x, int y)
+#include <iostream>
+
+int main()
+{ // comienzo del bloque externo
+    std::cout << "Escribe un entero: ";
+    int valor{};
+    std::cin >> valor;
+
+    if (valor >= 0)
+    { // comienzo de bloque anidado
+        std::cout << valor << " es un entero positivo (o cero)\n";
+        std::cout << "El doble de este número es " << valor * 2 << '\n';
+    } // final de bloque anidado
+    else
+    { // comienzo de otro bloque anidado
+        std::cout << valor << " es un entero negativo\n";
+        std::cout << "El positivo de este número es " << -valor << '\n';
+    } // fin de otro bloque anidado
+
+    return 0;
+} // fin del bloque externo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*int sumar(int x, int y)
 { // inicio bloque
     return x + y;
 } // final bloque
@@ -15,7 +55,7 @@ int main()
 
     return 0;
 
-} // final bloque exterior
+} // final bloque exterior*/
 
 
 

@@ -1,4 +1,44 @@
 #include <iostream>
+int main()
+{ // bloque 1, nivel de anidamiento 1
+    std::cout << "Escribe un entero: ";
+    int valor{};
+    std::cin >> valor;
+
+    if (valor > 0)
+    { // bloque 2, nivel de anidamiento 2
+        if ((valor % 2) == 0)
+        { // bloque 3, nivel de anidamiento 3
+            std::cout << valor << " es positivo y par\n";
+        }
+        else
+        { // block 4, also nesting level 3
+            std::cout << valor << " es positivo e impar\n";
+        }
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <iostream>
 
 int main()
 { // comienzo del bloque externo
@@ -18,7 +58,7 @@ int main()
     } // fin de otro bloque anidado
 
     return 0;
-} // fin del bloque externo
+} // fin del bloque externo*/
 
 
 
